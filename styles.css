@@ -40,11 +40,40 @@ main {
   letter-spacing: -0.26px;
   text-align: center;
   color: #cee3e9;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
+}
+
+.loader {
+  border: 8px solid #485466; /* Light grey */
+  border-top: 8px solid #53ffaa; /* Blue */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.hide {
+  display: none;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-size: 1.8rem;
 }
 
 .divider {
   width: 100%;
+  margin-top: 12px;
 }
 
 .dice {
@@ -80,6 +109,14 @@ main {
   .advice-text {
     font-size: 2.8rem;
     letter-spacing: -0.3px;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+  }
+
+  .error {
+    font-size: 2rem;
+  }
+
+  .divider {
+    margin-top: 24px;
   }
 }
